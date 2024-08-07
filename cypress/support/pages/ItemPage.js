@@ -22,12 +22,12 @@ class ItemPage extends BasePage {
     return cy.get('#add-to-cart');
   }
 
-  clickAddToCartBtn() {
-    return this.addToCartBtn.click();
-  }
-
   get removeBtn() {
     return cy.get('#remove');
+  }
+
+  clickAddToCartBtn() {
+    return this.addToCartBtn.click();
   }
 
   clickRemovetBtn() {

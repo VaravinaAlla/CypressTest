@@ -1,7 +1,6 @@
 /// <reference types="cypress" />
 
 import LoginPage from '../../support/pages/LoginPage';
-import testData from '../../fixtures/credentials.json';
 import InventoryPage from '../../support/pages/InventoryPage';
 import ItemPage from '../../support/pages/ItemPage';
 

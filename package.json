@@ -4,11 +4,23 @@
   "description": "Cypress Test",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cypress run",
+    "test:open": "cypress open",
+    "test:record": "cypress run --record",
+    "test:reporter": "cypress run --reporter mochawesome",
+    "test:spec": "cypress run --spec",
+    "test:tag": "cypress run --tag",
+    "test:config": "cypress run --config",
+    "test:env": "cypress run --env",
+    "test:global": "cypress run --global",
+    "allure:generate": "allure generate --clean",
+    "allure:open": "allure open"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.13.1"
+    "@shelex/cypress-allure-plugin": "^2.40.2",
+    "cypress": "^13.13.1",
+    "cypress-mochawesome-reporter": "^3.8.2"
   }
 }
