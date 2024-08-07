@@ -10,12 +10,12 @@ class InventoryPage extends BasePage {
     return cy.get('[data-test="shopping-cart-link"]');
   }
 
-  clickShoppingCart() {
-    return this.shoppingCart.click();
-  }
-
   get productSort() {
     return cy.get('[data-test="product-sort-container"]');
+  }
+
+  clickShoppingCart() {
+    return this.shoppingCart.click();
   }
 
   poductSortOptions() {

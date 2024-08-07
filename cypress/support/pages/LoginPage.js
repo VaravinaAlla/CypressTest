@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 import BasePage from './BasePage';
-import testData from '../../fixtures/credentials.json';
+//import testData from '../../fixtures/credentials.json';
 
 class LoginPage extends BasePage {
   get usernameField() {
@@ -31,8 +31,8 @@ class LoginPage extends BasePage {
   }
 
   loginWithCorrectData() {
-    this.usernameField.type(testData.userNames.correctUsername);
-    this.passwordField.type(testData.passwords.correctPassword);
+    this.usernameField.type(Cypress.env('USER_NAME'));
+    this.passwordField.type(Cypress.env('USER_PASSWORD'));
     this.loginButton.click();
   }
 
