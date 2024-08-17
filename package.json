@@ -22,5 +22,8 @@
     "@shelex/cypress-allure-plugin": "^2.40.2",
     "cypress": "^13.13.1",
     "cypress-mochawesome-reporter": "^3.8.2"
+  },
+  "dependencies": {
+    "cypress-plugin-api": "^2.11.2"
   }
 }
