@@ -132,4 +132,5 @@ dist
 /playwright-report/
 /blob-report/
 /reports/
+/allure-report/
 /playwright/.cache/
