@@ -63,7 +63,7 @@ describe('API test', () => {
         ],
       };
       cy.intercept('GET', '**/cars', fakeCars);
-      cy.contains('Sign in').click();
+      cy.contains('Sign In').click();
       cy.get('#signinEmail').type('testovich@gmail.com');
       cy.get('#signinPassword').type('C7Pu6V2e3.FNuy');
       cy.contains('Login').click();
