@@ -131,6 +131,6 @@ dist
 /test-results/
 /playwright-report/
 /blob-report/
-reports/
+cypress/reports/
 /allure-report/
 /playwright/.cache/
